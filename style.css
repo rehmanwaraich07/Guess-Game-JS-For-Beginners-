@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+NG+Modern:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#wrap {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 400px;
+  width: 90%;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  color: #666;
+  margin: 10px 0;
+  font-size: 1.3rem;
+}
+
+.form {
+  margin: 20px 0;
+}
+
+#guess {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.guessField {
+  width: calc(100% - 22px);
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.guessField:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.guessSubmit {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.guessSubmit:hover {
+  background-color: #0056b3;
+}
+
+.resultParas p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.resultParas .guesses,
+.resultParas .lastResult,
+.resultParas .lowOrHi {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.resultParas {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  #wrap {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  #guess {
+    font-size: 1rem;
+  }
+
+  .guessField,
+  .guessSubmit {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .resultParas {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #wrap {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  #guess {
+    font-size: 0.9rem;
+  }
+
+  .guessField,
+  .guessSubmit {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .resultParas {
+    font-size: 1rem;
+  }
+}
+.error{
+  font-size: 1.5rem;
+}
